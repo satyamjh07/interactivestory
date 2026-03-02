@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Novel Player</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="game">
+  <a class="back-link" href="index.html">← Back to catalog</a>
+
+  <main class="game-main" id="game-root">
+    <aside class="hud" id="hud" aria-live="polite"></aside>
+
+    <section class="scene-wrapper">
+      <div class="scene-image-container" id="scene-image-container">
+        <img id="scene-image" alt="Current scene" />
+        <div class="scene-gradient"></div>
+        <div class="scene-caption" id="scene-caption"></div>
+        <div class="dialogue-box" id="dialogue-box"></div>
+      </div>
+      <div class="choice-container" id="choice-container"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
